@@ -1,5 +1,7 @@
 # SVG-Logo-Maker
 
+# Description
+This application takes a user input to generate a logo and save it as an SVG file. The application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a svg` file.
 
 ### User Story
 
@@ -27,3 +29,13 @@ AND the output text "Generated logo.svg" is printed in the command line
 WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ```
+# Installation
+To install and use the Professional README Generator application, please follow these steps:
+
+1.You can clone this repository to your local machine using Git:
+
+Git clone https://github.com/harold-fv/SVG-Logo-Maker.
+
+Next, run the following on the command line, npm init -y and npm i inquirer@8.2.4.
+
+After you install the package ,from the command line type node index.js to run the program.
