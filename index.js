@@ -3,7 +3,7 @@ const fs = require("fs");
 const { Triangle, Circle, Square } = require("./lib/shapes");
 
 
-//Create Questions
+//Create the Questions and save it to variable const
 const questions = [
   {
     type: "input",
@@ -28,4 +28,18 @@ const questions = [
     message: "Enter the shape color:",
   },
 ];
+// Creates inquirer package to prompt the user for input based on the questions array
+inquirer.prompt(questions).then((answers) => {
+    let shape;
+    switch (answers.shape) {
+      case "triangle":
+        shape = new Triangle();
+        break;
+      case "circle":
+        shape = new Circle();
+        break;
+      case "square":
+        shape = new Square();
+        break;
+      }});
 
