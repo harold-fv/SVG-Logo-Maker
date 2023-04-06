@@ -1,9 +1,7 @@
-
 const inquirer = require("inquirer");
 const fs = require("fs");
 const { Triangle, Circle, Square } = require("./lib/shapes");
 const SVG = require("./lib/svg");
-
 
 //Create the Questions and save it to variable const
 const questions = [
@@ -46,24 +44,23 @@ inquirer.prompt(questions).then((answers) => {
       break;
   }
 
-//passing the user's input for the shape color 
+  //passing the user's input for the shape color 
 //(stored in answers.shapeColor) to the setColor() method
-shape.setColor(answers.shapeColor);
+  shape.setColor(answers.shapeColor);
 
   const svg = new SVG();
   svg.setShape(shape);
   svg.setText(answers.text, answers.textColor);
 
-//Creates and saves the SVG logo file(s) to a folder called examples
-  fs.writeFile(`./examples/${answers.shape}.svg`, svg.render(), (err) => {
+  //Creates and saves the SVG logo file(s) to a folder called SVG_generated_logo
+  fs.writeFile("./SVG_generated_logo/logo.svg", svg.render(), (err) => {
     if (err) {
       console.error("Error writing SVG file:", err);
     } else {
-      console.log("SVG file created successfully!");
+      console.log("Generated logo.svg");
     }
   });
 });
-
 
 
 
