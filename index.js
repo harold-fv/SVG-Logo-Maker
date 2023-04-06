@@ -1,9 +1,11 @@
+
 const inquirer = require("inquirer");
 const fs = require("fs");
 const { Triangle, Circle, Square } = require("./lib/shapes");
 const SVG = require("./lib/svg");
 
-////Create the Questions and save it to variable const
+
+//Create the Questions and save it to variable const
 const questions = [
   {
     type: "input",
@@ -14,7 +16,7 @@ const questions = [
   {
     type: "input",
     name: "textColor",
-    message: "Enter the text color:",
+    message: "Enter the text color (hexadecimal or name):",
   },
   {
     type: "list",
@@ -25,11 +27,11 @@ const questions = [
   {
     type: "input",
     name: "shapeColor",
-    message: "Enter the shape color:",
+    message: "Enter the shape color (hexadecimal or name):",
   },
 ];
 
-//// Creates inquirer package to prompt the user for input based on the questions array
+// Creates inquirer package to prompt the user for input based on the questions array
 inquirer.prompt(questions).then((answers) => {
   let shape;
   switch (answers.shape) {
@@ -44,20 +46,16 @@ inquirer.prompt(questions).then((answers) => {
       break;
   }
 
-    //passing the user's input for the shape color 
-      //(stored in answers.shapeColor) to the setColor() method
-
-  shape.setColor(answers.shapeColor);
+//passing the user's input for the shape color 
+//(stored in answers.shapeColor) to the setColor() method
+shape.setColor(answers.shapeColor);
 
   const svg = new SVG();
   svg.setShape(shape);
   svg.setText(answers.text, answers.textColor);
 
-  const svgContent = svg.render();
-
-
-  //Creates and saves the SVG logo file(s) to a folder called examples
-  fs.writeFile(`./examples/${answers.shape}.svg`, svgContent, (err) => {
+//Creates and saves the SVG logo file(s) to a folder called examples
+  fs.writeFile(`./examples/${answers.shape}.svg`, svg.render(), (err) => {
     if (err) {
       console.error("Error writing SVG file:", err);
     } else {
@@ -65,3 +63,7 @@ inquirer.prompt(questions).then((answers) => {
     }
   });
 });
+
+
+
+
