@@ -55,5 +55,15 @@ inquirer.prompt(questions).then((answers) => {
       <text x="150" y="150" font-size="36" text-anchor="middle" fill="${answers.textColor}">${answers.text}</text>
     </svg>
       `;
-      
+    
+      // creates a new file called logo.svg located on SVG_created_file folder or overwrite the existing file with the specified content.
+      fs.writeFile("./SVG_created_file/logo.svg", svgContent, (err) => {
+        if (err) {
+          console.error("Error writing SVG file:", err);
+        } else {
+          console.log("SVG file created successfully!");
+        }
+      });
+  
+  
   });
