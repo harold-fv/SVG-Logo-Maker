@@ -53,7 +53,7 @@ inquirer.prompt(questions).then((answers) => {
   svg.setText(answers.text, answers.textColor);
 
   //Creates and saves the SVG logo file(s) to a folder called SVG_generated_logo
-  fs.writeFile("./SVG_generated_logo/logo.svg", svg.render(), (err) => {
+  fs.writeFile("./examples/logo.svg", svg.render(), (err) => {
     if (err) {
       console.error("Error writing SVG file:", err);
     } else {
