@@ -41,5 +41,19 @@ inquirer.prompt(questions).then((answers) => {
       case "square":
         shape = new Square();
         break;
-      }});
+      }
+  
+      //passing the user's input for the shape color 
+      //(stored in answers.shapeColor) to the setColor() method
 
+      shape.setColor(answers.shapeColor);
+  
+      //defines a template to create the SVG content
+      const svgContent = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+      ${shape.render()}
+      <text x="150" y="150" font-size="36" text-anchor="middle" fill="${answers.textColor}">${answers.text}</text>
+    </svg>
+      `;
+      
+  });
