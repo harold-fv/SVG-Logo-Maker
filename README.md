@@ -67,7 +67,8 @@ After you install the package ,from the command line type node index.js to run t
 
 7. Below is the example of the Circle.svg.
 
-https://github.com/harold-fv/SVG-Logo-Maker/blob/main/examples/circle.svg
+![image](https://user-images.githubusercontent.com/120603153/230543810-a31434fd-d478-45e7-8890-6de9f374cd6f.png)
+
 
 8. The system also has passed all the test using npm test. The npm test is a command that runs the test suite for a Node.js project. It typically runs a test runner like Jest , which executes the tests defined in the project's test files.
 
