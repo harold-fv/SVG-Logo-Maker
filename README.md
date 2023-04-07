@@ -65,7 +65,11 @@ After you install the package ,from the command line type node index.js to run t
 
 ![image](https://user-images.githubusercontent.com/120603153/230542341-a7377bde-1c92-48c6-9443-e73210714f71.png)
 
-7. The system also has passed all the test using npm test. The npm test is a command that runs the test suite for a Node.js project. It typically runs a test runner like Jest , which executes the tests defined in the project's test files.
+7. Below is the example of the Circle.svg.
+
+https://github.com/harold-fv/SVG-Logo-Maker/blob/main/examples/circle.svg
+
+8. The system also has passed all the test using npm test. The npm test is a command that runs the test suite for a Node.js project. It typically runs a test runner like Jest , which executes the tests defined in the project's test files.
 
 ![image](https://user-images.githubusercontent.com/120603153/230542536-cfe1b296-db5c-4bf0-a1c2-ca29217d9b74.png)
 
