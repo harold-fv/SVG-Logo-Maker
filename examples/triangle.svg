@@ -1,5 +1,1 @@
-
-        <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="150, 18 244, 182 56, 182" fill="#1b02ef" />
-          <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">hcg</text>
-        </svg>
+<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><polygon points="150, 18 244, 182 56, 182" fill="#ff0000" /><text x="150" y="125" font-size="60" text-anchor="middle" fill="WHITE">HCG</text></svg>
