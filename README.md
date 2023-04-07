@@ -70,4 +70,11 @@ After you install the package ,from the command line type node index.js to run t
 ![image](https://user-images.githubusercontent.com/120603153/230542536-cfe1b296-db5c-4bf0-a1c2-ca29217d9b74.png)
 
 
+# Walkthrough Video
 
+
+https://github.com/harold-fv/SVG-Logo-Maker/blob/main/svg-logo-demo.gif
+
+• The included image demonstrates the application functionality:
+
+The SVG Logo Maker program allows you to generate a simple logo for any projects suited for anyone. Overall, this program is useful tool for generating a logo quickly and easily.
