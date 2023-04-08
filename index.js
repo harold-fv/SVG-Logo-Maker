@@ -3,7 +3,7 @@ const fs = require("fs");
 const { Triangle, Circle, Square } = require("./lib/shapes");
 const SVG = require("./lib/svg");
 
-//Create the Questions and save it to variable const
+//Creates the Questions and save it to variable const
 const questions = [
   {
     type: "input",
